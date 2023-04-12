@@ -1,0 +1,10 @@
+set path="C:\Program Files\Java\jdk1.8.0_301\bin\bin"
+
+set classpath=E:\Java-CLG\Java Library Management System\ojdbc6.jar;.;
+
+
+javac *.java
+
+java Library
+
+21 main files

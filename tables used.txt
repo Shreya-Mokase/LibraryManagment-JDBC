@@ -1,0 +1,50 @@
+alter tables needed- 
+
+1) librarian
+2) books
+3) issuebooks
+-----------
+1) librarian-
+
+create table librarian(
+id number(5) NOT NULL,
+name varchar(25) NOT NULL,
+password varchar(8) NOT NULL,
+address varchar(20) NOT NULL,
+city varchar(15) NOT NULL,
+contact varchar(10) NOT NULL
+);
+
+ALTER TABLE librarian ADD constraint pk2 primary key(id);
+
+
+-----------
+2) books-
+
+create table books(
+id number(10) NOT NULL,
+name varchar(20) NOT NULL,
+author varchar(20) NOT NULL,
+publisher varchar(20) NOT NULL,
+quantity number(5) NOT NULL,
+issued number(5) 
+) ;
+
+
+alter table books add constraint pk primary key(id);
+
+----------
+3) issuebooks
+
+CREATE TABLE issuebooks(
+id number(11) NOT NULL,
+studentid number(11) NOT NULL,
+studentname varchar(50) NOT NULL,
+studentcontact varchar(20) NOT NULL,
+issueddate  DATE
+) ;
+
+
+alter table issuebooks add constraint pk3 primary key(id);
+
+
